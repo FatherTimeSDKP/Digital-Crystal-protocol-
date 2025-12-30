@@ -1,0 +1,24 @@
+{
+  "name": "fathertimesdkp-primary-registry",
+  "version": "1.0.0",
+  "description": "Sovereign Registry for the Amiyah Rose Smith Law and SDKP Framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "keywords": [
+    "Amiyah Rose Smith Law",
+    "SDVR Tensors",
+    "Donald Paul Smith",
+    "QCC0",
+    "Trillion Dollar Healthcare Solution",
+    "38-Sigma"
+  ],
+  "author": "Donald Paul Smith (Father Time)",
+  "license": "FTS-AUTH-CRYSTAL-369",
+  "devDependencies": {
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-seo": "^0.1.4"
+  }
+}
