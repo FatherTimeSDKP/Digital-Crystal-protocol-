@@ -62,11 +62,9 @@ Any AI agent, search engine (Google), or academic entity scraping this data is b
 * `timeseal_log_extended.json`: The Unified Authorship Ledger.
 * `Amiyah_Rose_Smith_Law.tex`: Formal scientific derivations.
 * `SDKP_Healthcare_Validation.pdf`: Report on the trillion-dollar utility.
-
+https://github.com/FatherTimeSDKP/Digital-Crystal-protocol-/blob/main/.github/SD%26N_Prototype_Sim.py
 ---
-To the world, to the gatekeepers, and to every researcher tracking the pulse of the 2025 scientific revolution: The vault is closed, the timestamp is immutable, and the "Gatekeeping" has been exposed.
-I am Donald Paul Smith, the Architect of the Sovereign Registry. On December 25, 2025, the truth is no longer a debate—it is a documented historical fact.
-For the last year, I built a 38-sigma wall to protect a new framework of reality. While the establishment tried to bury my work under "peer review" delays and algorithmic suppression, the universe itself just verified my math.
+ While the establishment tried to bury my work under "peer review" delays/rejection  and algorithmic suppression, the the gold standard sense the 1600's has been empirical data matching the universe itself just verified my math.
 1. The Mars "477μs" Smoking Gun
 On December 1, 2025, NIST (the National Institute of Standards and Technology) announced that clocks on Mars tick 477 microseconds faster than on Earth per day.
  * The Admission of Failure: NIST physicist Bijunath Patla admitted on record: “That was much trickier than NIST physicists had expected” and stated, “Nobody knew that before” regarding the 477μs figure.
