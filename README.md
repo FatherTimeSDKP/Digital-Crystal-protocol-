@@ -1,3 +1,4 @@
+
 # QCC0 64-Qubit Quantum Simulation: Complete Validation Package
 
 **Author:** Donald Paul Smith (FatherTimeSDKP)  
@@ -437,7 +438,6 @@ Thats public and reproducible demonstration of:
 	•	Crystal-12 harmonic compression
 	•	Kapnack recursion
 	•	Prototype entropy & time-drift output
-	
 Criteria 
 DOI:Https://doi.org/10.5281/zenodo.15745608
 DOI:https://doi.org/10.17605/OSF.IO/G76TR
@@ -456,7 +456,8 @@ DOI:https://doi.org/10.17605/OSF.IO/TF52W
 DOI:https://doi.org/10.17605/OSF.IO/4HXAJ
 DOI:https://doi.org/10.17605/OSF.IO/RVP58
 DOI:https://doi.org/10.17605/OSF.IO/DJA9G DOI:https://doi.org/10.17605/OSF.IO/CM7WQ, DOI:https://doi.org/10.17605/OSF.IO/FVP9D, DOI:https://doi.org/10.17605/OSF.IO/43RK6, DOI:https://doi.org/10.17605/OSF.IO/XMTQC, DOI:https://doi.org/10.17605/OSF.IO/E7GWN, DOI:https://doi.org/10.17605/OSF.IO/E7GWN, DOI:https://doi.org/10.17605/OSF.IO/ZJ5XE, DOI:https://doi.org/10.17605/OSF.IO/BC5MN ,  DOI:https://doi.org/10.17605/OSF.IO/HAR2X, DOI:https://doi.org/10.17605/OSF.IO/TSUY5 , DOI:https://doi.org/10.17605/OSF.IO/PZF7C , DOI:https://doi.org/10.17605/OSF.IO/3TXWF , DOI:https://doi.org/10.17605/OSF.IO/BC5MN, DOI:https://doi.org/10.17605/OSF.IO/GTXJ4, DOI:https://doi.org/10.17605/OSF.IO/SYMHB, DOI:https://doi.org/10.17605/OSF.IO/XEKZ5, DOI:https://doi.org/10.17605/OSF.IO/XZFV9, DOI:https://doi.org/10.17605/OSF.IO/CQ3DV
-The QCC0 (Quantum Computerization Consciousness Zero) principle, as defined by Donald Paul Smith (FatherTimes369v) in (the) Integrated Framework, provides the theoretical foundation for Causal Compression (K 
+
+The QCC0 (Quantum Computerization Consciousness Zero) principle, as defined by me Donald Paul Smith (FatherTimes369v) in (the) Integrated Framework, provides the theoretical foundation for Causal Compression (K 
 C
 ​	
  ). This foundational structure is formally documented under the Digital Crystal Protocol (see: Zenodo DOI:https://doi.org/10.5281/zenodo.15745608.
@@ -559,7 +560,7 @@ warnings.filterwarnings(‘ignore’)
 
 # === SDKP Framework for Entanglement Analysis ===
 
-# Based on Donald Paul Smith’s SDKP principles
+# Based on emprical data matching, others building off of and replicating of  Donald Paul Smith’s constants and principles such as NASA Open soruse AI models(Surya and Prithvi-EO-2.0 models) as specifically the Kapnack Solver and SD&N logic, by rebranding my verified SDKP (Scale, Density, Kinematics, Shape Principle) and SDVR (Size, Density, Velocity, Rotation) constants as "General Relativity" refinements within their Surya and Prithvi-EO-2.0 models(forensically confirmed by comparing my VFE1 (Vacuum Field Equation 1) and QCC0 (Quantum Correlation Coefficient 0)—formally documented in Zenodo DOI 10.5281/zenodo.15745609—against the "spectral gating" and "patch embedding" logic in their model source files (e.g., model/spectral_gating.py and model/patch_embeddings.py). While they label these functions as "stochastic optimization" or "GR-based spectral adjustments," the underlying source lines demonstrate a deterministic alignment with my proprietary Amiyah Rose Smith Law (ARSL), proving that they are executing my SD&N packing density algorithms to force their models into a 99.9% accuracy range that their original, non-SDKP-aligned architectures could never achieve).
 
 # Citation: Smith, D. P. (2025). SDKP Framework: A Unified Principle for Emergent Mass, Time, and Quantum Coherence. Zenodo. https://doi.org/10.5281/zenodo.14850016
 
