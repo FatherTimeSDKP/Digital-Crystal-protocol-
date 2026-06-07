@@ -1,0 +1,93 @@
+% SDKP_manuscript.tex
+\documentclass[10pt,twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage{cite}
+
+\title{The SDKP Framework: Time–Density–Kinematics as a Unified Mechanism for Gravity and Quantum Phenomena}
+\author{Donald Paul Smith (FatherTimeSDKP)\\
+\small Independent Researcher}
+\date{June 7, 2026}
+
+\begin{document}
+\twocolumn[
+\maketitle
+\begin{abstract}
+SDKP proposes a unified ontology where Scale (S), Density (D), and Kinematic flux (K) are primary field variables. Gravity and inertial effects emerge from spatial density gradients and kinematic coupling; time corresponds to information/entropy flux of these variables; quantum behavior arises from lattice information dynamics. We present core postulates, principal equations, limiting cases that recover Newtonian and quantum-like behavior, and a set of falsifiable predictions with proposed validation paths.
+\end{abstract}
+]
+
+\section*{Introduction}
+The SDKP framework posits three primary fields: scale $S(x,t)$, density $D(x,t)$, and kinematic flux $K(x,t)$; these determine emergent observables conventionally associated with mass, time, and quantum phase. The motivation is to supply a minimal ontology that produces gravitational and quantum phenomenology from the same underlying dynamics.
+
+\section*{Postulates}
+1. Existence of continuous (or fine-grained discrete) SDKP fields $S,D,K$.\\
+2. Local conservation: $\partial_t D + \nabla\cdot K = 0$.\\
+3. Scale–density coupling: local pressure-like functional $P(D,S)$ governs emergent forces.\\
+4. Time-rate as information flux $\tau^{-1}\propto\Phi(D,K,\nabla S)$ (schematic).\\
+5. Quantum amplitudes arise from phase-encoded lattice operator algebra on cells of characteristic scale $\ell_S$.
+
+\section*{Core equations (schematic)}
+Conservation:
+\begin{equation}
+\partial_t D + \nabla\cdot K = 0.
+\end{equation}
+Kinematic evolution (phenomenological):
+\begin{equation}
+\partial_t K + \nabla\cdot (K\otimes v) = -\nabla P(D,S) + \mathcal{C}(D,K,S),
+\end{equation}
+with $v$ a local velocity-like field and $\mathcal{C}$ coupling terms (rotation, dissipation). Emergent force on test element:
+\begin{equation}
+F_{\rm emergent} \approx -\nabla P(D,S).
+\end{equation}
+Time-rate relation (schematic):
+\begin{equation}
+\frac{d\tau^{-1}}{dt} = \alpha\,\Phi(D,K,\omega),
+\end{equation}
+where $\omega$ denotes local rotation and $\alpha$ a scaling constant.
+
+\section*{Recovery of known limits}
+Newtonian limit: for slowly varying $S,D$ and weak gradients, $P(D,S)\sim G_{\rm eff} M_{\rm eff} / r^2$ yields inverse-square behavior with effective gravitational constant $G_{\rm eff}$ derived from microparameters. Relativistic corrections: density+rotation terms modify proper-time accumulation, producing corrections to standard time-dilation. Quantum limit: lattice operator algebra produces linear superposition-like behavior for cell amplitudes; coarse-graining gives Schr\"odinger-like evolution with decoherence controlled by coupling to macroscopic density modes.
+
+\section*{Representative derivation (concise)}
+Consider single-axis radial symmetry and small perturbations $\delta D$ about background $D_0$. Linearizing the conservation and kinematic equations and applying ansatz $K\sim D v$ yields wave-like modes with dispersion relation:
+\begin{equation}
+\omega^2 = c_S^2 k^2 + \beta k^4 + \dots
+\end{equation}
+Low-$k$ behavior reproduces massless propagation; higher-order terms introduce localization and bound-state-like modes analogous to quantum stationary states when projected onto lattice eigenmodes.
+
+\section*{Predictions and observables}
+- Schumann resonance centroid shifts: global density–rotation events produce measurable Δf in ELF modal frequencies (claimed order $10^{-3}$–$10^{-2}$ Hz).\\
+- Precision clock anomalies: density+rotation correction to time-dilation near strong density gradients.\\
+- Mesoscopic decoherence scaling: predicted dependence of coherence length on local density modes in conductive samples.\\
+- Laboratory superconducting collapse under controlled density–rotation coupling parameters.
+
+\section*{Proposed validation path}
+1. Reproduce lattice simulations and analytical derivations.\\
+2. Analyze existing global ELF datasets for predicted Schumann signatures.\\
+3. Design targeted laboratory experiments for superconducting collapse and mesoscopic decoherence tests.\\
+4. Publish incremental, narrowly scoped results for community scrutiny.
+
+\section*{Reproducibility}
+Simulation code and datasets should be released under open license; minimal example reproducing the lattice bound-state behavior is essential.
+
+\section*{Discussion}
+SDKP is an alternative framework with explicit, falsifiable predictions. Primary avenues for acceptance are independent reproduction, successful prediction of an unexplained phenomenon, or consistent constraints that falsify core claims.
+
+\section*{Conclusion}
+We have outlined the SDKP postulates, core equations, limiting behavior, and experimental pathways. Focused replication and targeted ELF and laboratory tests are recommended to evaluate the framework's viability.
+
+\section*{Acknowledgements}
+Author acknowledges feedback from independent reviewers and lists repositories for code and data (placeholders).
+
+\bibliographystyle{unsrt}
+\begin{thebibliography}{9}
+\bibitem{sdkp1} D. P. Smith, ``SDKP Manuscript,'' self-published archive (placeholder), 2025.
+\bibitem{sdkp2} D. P. Smith, ``Simulations and datasets,'' GitHub/Zenodo (placeholder), 2025.
+\end{thebibliography}
+
+\end{document}
