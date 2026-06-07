@@ -1,6 +1,7 @@
 % SDKP_Schumann_protocol.tex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -14,52 +15,74 @@
 \maketitle
 
 \section*{Objective}
-Test the SDKP prediction that global density–rotation events produce measurable centroid shifts in Schumann resonance modes (primary: 7.8 Hz, secondary: 14.3 Hz, 20.8 Hz) with expected magnitude $\Delta f\gtrsim10^{-3}$ Hz.
+Test the SDKP prediction that global density--rotation events produce measurable centroid shifts in Schumann resonance modes (primary: 7.8 Hz, secondary: 14.3 Hz, 20.8 Hz) with expected magnitude $\Delta f\gtrsim10^{-3}$ Hz.
 
 \section*{Overview}
-Use existing global ELF magnetometer networks and deploy additional synchronized magnetometers at three or more locations to achieve global coverage. Combine ELF data with auxiliary datasets (lightning, ionospheric TEC, geomagnetic indices) and apply robust spectral-tracking and statistical significance testing.
+Use existing global ELF magnetometer networks and deploy additional synchronized magnetometers at three or more locations to achieve global coverage. Combine ELF data with auxiliary datasets (lightning stroke catalogs with peak-current weighting, ionospheric TEC, geomagnetic indices) and apply robust spectral-tracking and statistical significance testing.
 
 \section*{Equipment and resources}
-- Induction coil magnetometers or broadband fluxgate magnetometers with sensitivity at ELF (0.1–50 Hz) and frequency resolution $<10^{-3}$ Hz.\\
-- GPS-disciplined data loggers for sub-ms time-stamping.\\
+- Induction-coil or broadband fluxgate magnetometers with ELF sensitivity (0.1--50 Hz); target noise floor <0.1 pT/\sqrt{Hz} at 10 Hz and dynamic range ≥120 dB.\\
+- GPS-disciplined data loggers for sub-ms time-stamping; log daily GPS-sync offsets.\\
+- Anti-aliasing analog filters and sampling ADCs.\\
 - Data storage (multi-year capacity) and compute resources for time-series analysis.\\
-- Access to global lightning stroke catalogs, ionosonde/TEC data, Kp/Dst indices, and available ELF archives (e.g., IMS, university networks).
+- Access to global lightning stroke catalogs (with stroke peak current), ionosonde/TEC products, and geomagnetic indices (Kp, Dst).\\
+- Optional: local lightning sensor (to weight local strokes) and environmental sensors (weather, seismic).
 
 \section*{Site selection}
-Choose three sites with low local ELF noise and broad geographic separation (e.g., continental, oceanic island, polar). Ensure GPS visibility and reliable power.
+Choose three or more sites with low anthropogenic ELF noise and broad geographic separation (e.g., continental, oceanic island, polar). Ensure reliable power, GPS visibility, and physical security for instruments.
 
 \section*{Data collection}
-- Sample at $\geq$200 Hz to avoid aliasing; use anti-alias filtering.\\
-- Continuous recording for minimum 12 months; archive in 1-hour files.\\
-- Record local environmental logs (storms, anthropogenic ELF sources).
+- Sampling: sample at $\geq$200 Hz; apply analog anti-alias low-pass filter near Nyquist.\\
+- Frequency resolution: use 600 s analysis windows (nominal resolution 1/600 s ≈ 1.67 mHz); apply zero-padding in FFT to achieve 1 mHz bins if required.\\
+- Continuous recording for minimum 12 months; archive in hourly files with embedded UTC timestamps.\\
+- Record local environmental logs (storms, maintenance, anthropogenic events) and daily GPS-sync diagnostics; document leap-second handling.
 
 \section*{Processing pipeline}
-1. Preprocessing: de-trend, remove DC offsets, apply bandpass 3–50 Hz.\\
-2. Spectral estimation: sliding-window Welch spectra (window 600 s, 50\% overlap), frequency binning 1 mHz.\\
-3. Centroid tracking: compute mode centroid frequency and bandwidth via weighted first moment within ±2 Hz of nominal mode.\\
-4. Cross-station correlation: compute coherence and time-lagged correlations of centroid fluctuations.\\
-5. Confound regression: model known drivers (lightning rate, TEC, Kp/Dst, local weather) via multivariate regression; compute residuals.\\
-6. Significance testing: surrogate data generation (phase-randomized) and bootstrapping to assess probability of observed synchronized Δf.
+1. Preprocessing: de-trend, remove DC offsets, apply bandpass 3--50 Hz, and decimate if needed.\\
+2. Spectral estimation: sliding-window Welch spectra (600 s window, 50\% overlap), use zero-padding to obtain desired bin width (e.g., 1 mHz).\\
+3. Centroid tracking: compute mode centroid frequency $f_c = \sum f\,P(f)/\sum P(f)$ within $\pm2$ Hz of nominal mode; estimate bandwidth via second moment.\\
+4. Cross-station analysis: compute coherence and time-lagged cross-correlations of centroid fluctuations; require consistency across $\geq$3 stations for global events.\\
+5. Confound regression: construct multivariate model including global lightning rate (with stroke peak-current weighting), local lightning rate, TEC/ionospheric indices, Kp/Dst, and local weather; use robust regression (e.g., Huber) and record explained variance.\\
+6. Significance testing: generate surrogate data by phase-randomization preserving PSD, bootstrap residuals, and control False Discovery Rate (FDR) when testing multiple windows.
+
+\section*{Analysis parameters and thresholds}
+- Detection threshold: synchronous centroid shift across stations exceeding $\Delta f_{\rm thr}=1\times10^{-3}$ Hz after confound regression.\\
+- Temporal coincidence window: ±60 s for cross-station alignment (adjust per coherence analysis).\\
+- Statistical significance: require p<0.01 after FDR correction and reproducibility across independent time segments.
 
 \section*{Falsification criteria}
-SDKP prediction falsified if, after confound regression and at 95\% confidence, no event-class of synchronized Δf exceeding $10^{-3}$ Hz is observed across stations, or observed fluctuations are fully attributable to known drivers.
+SDKP prediction is falsified if, after confound regression and analysis, no class of synchronized centroid shifts exceeding $\Delta f_{\rm thr}$ is observed with p<0.01 across the dataset, or all observed synchronized shifts are attributable to modeled conventional drivers.
 
 \section*{Positive confirmation criteria}
-Detection of synchronous Δf $>\!10^{-3}$ Hz across geographically separated stations, temporally correlated with independent SDKP-event markers (if defined), and not explainable by lightning/ionospheric/geomagnetic activity.
+Detection of synchronous $\Delta f>\Delta f_{\rm thr}$ across geographically separated stations, temporally coherent, correlated with independent SDKP-event markers if available, and not explainable by lightning/ionospheric/geomagnetic activity as shown by confound regression and surrogate tests.
 
 \section*{Data sharing and reproducibility}
-Publish raw and processed data, analysis code (Python/Jupyter notebooks), and pipeline container (Docker) in GitHub and archive stable releases on Zenodo with DOI.
+Publish raw and processed data, analysis code (Python/Jupyter notebooks), and a containerized pipeline (Docker) on GitHub; archive stable releases on Zenodo with DOI. Provide example minimal dataset and a README with exact commands to reproduce main figures.
 
 \section*{Timeline and personnel}
-- Year 0–0.25: site procurement, instrument deployment, pipeline testing.\\
-- Year 0.25–1.25: data collection.\\
-- Year 1.25–1.5: analysis, replication runs, draft manuscript.
+- Month 0--3: site procurement, instrument calibration, pipeline testing.\\
+- Month 4--15: continuous data collection.\\
+- Month 16--18: analysis, replication checks, manuscript drafting.
 
-\section*{Appendix: example code outline}
-- Data I/O: use Obspy or custom readers.\\
-- Spectra: scipy.signal.welch / numpy.fft.\\
-- Centroid calc: weighted mean of PSD bins.\\
-- Confound regression: statsmodels OLS with bootstrapped residuals.
+\section*{Appendix: example analysis code snippets}
+- I/O and preprocessing: use ObsPy for waveform handling or custom readers; store metadata in JSON sidecars.\\
+- Spectra: scipy.signal.welch with nperseg = 600*srate and noverlap = 0.5*nperseg; use numpy.fft.rfft with zero-padding for desired binning.\\
+- Centroid calc (Python sketch):
+\begin{verbatim}
+# P: PSD array, f: freq array
+mask = (f > f0-2) & (f < f0+2)
+fc = (f[mask]*P[mask]).sum() / P[mask].sum()
+\end{verbatim}
+- Confound regression: use statsmodels.RLM or HuberRegressor; bootstrap residuals for confidence intervals.\\
+- Surrogates: phase-randomize time series by randomizing FFT phases and inverse-transform.
+
+\section*{Instrument specification recommendations}
+- Magnetometer: induction coil with flat response 0.1--50 Hz, sensitivity <0.1 pT/\sqrt{Hz} at 10 Hz.\\
+- ADC: 24-bit, sampling ≥200 Hz, GPS PPS input for time-lock.\\
+- Logger: linux-based with NTP disabled; rely on GPS PPS for timing; log UTC offset daily.
+
+\section*{Acknowledgements}
+Protocol adapted for reproducible testing and designed to minimize confounds from conventional geophysical drivers.
 
 \bibliographystyle{unsrt}
 \begin{thebibliography}{9}
