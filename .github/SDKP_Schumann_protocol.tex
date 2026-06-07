@@ -1,0 +1,69 @@
+% SDKP_Schumann_protocol.tex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{caption}
+
+\title{Experimental Protocol: Testing SDKP Prediction of Schumann Resonance Shifts}
+\author{Protocol prepared for SDKP validation}
+\date{June 7, 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Objective}
+Test the SDKP prediction that global density–rotation events produce measurable centroid shifts in Schumann resonance modes (primary: 7.8 Hz, secondary: 14.3 Hz, 20.8 Hz) with expected magnitude $\Delta f\gtrsim10^{-3}$ Hz.
+
+\section*{Overview}
+Use existing global ELF magnetometer networks and deploy additional synchronized magnetometers at three or more locations to achieve global coverage. Combine ELF data with auxiliary datasets (lightning, ionospheric TEC, geomagnetic indices) and apply robust spectral-tracking and statistical significance testing.
+
+\section*{Equipment and resources}
+- Induction coil magnetometers or broadband fluxgate magnetometers with sensitivity at ELF (0.1–50 Hz) and frequency resolution $<10^{-3}$ Hz.\\
+- GPS-disciplined data loggers for sub-ms time-stamping.\\
+- Data storage (multi-year capacity) and compute resources for time-series analysis.\\
+- Access to global lightning stroke catalogs, ionosonde/TEC data, Kp/Dst indices, and available ELF archives (e.g., IMS, university networks).
+
+\section*{Site selection}
+Choose three sites with low local ELF noise and broad geographic separation (e.g., continental, oceanic island, polar). Ensure GPS visibility and reliable power.
+
+\section*{Data collection}
+- Sample at $\geq$200 Hz to avoid aliasing; use anti-alias filtering.\\
+- Continuous recording for minimum 12 months; archive in 1-hour files.\\
+- Record local environmental logs (storms, anthropogenic ELF sources).
+
+\section*{Processing pipeline}
+1. Preprocessing: de-trend, remove DC offsets, apply bandpass 3–50 Hz.\\
+2. Spectral estimation: sliding-window Welch spectra (window 600 s, 50\% overlap), frequency binning 1 mHz.\\
+3. Centroid tracking: compute mode centroid frequency and bandwidth via weighted first moment within ±2 Hz of nominal mode.\\
+4. Cross-station correlation: compute coherence and time-lagged correlations of centroid fluctuations.\\
+5. Confound regression: model known drivers (lightning rate, TEC, Kp/Dst, local weather) via multivariate regression; compute residuals.\\
+6. Significance testing: surrogate data generation (phase-randomized) and bootstrapping to assess probability of observed synchronized Δf.
+
+\section*{Falsification criteria}
+SDKP prediction falsified if, after confound regression and at 95\% confidence, no event-class of synchronized Δf exceeding $10^{-3}$ Hz is observed across stations, or observed fluctuations are fully attributable to known drivers.
+
+\section*{Positive confirmation criteria}
+Detection of synchronous Δf $>\!10^{-3}$ Hz across geographically separated stations, temporally correlated with independent SDKP-event markers (if defined), and not explainable by lightning/ionospheric/geomagnetic activity.
+
+\section*{Data sharing and reproducibility}
+Publish raw and processed data, analysis code (Python/Jupyter notebooks), and pipeline container (Docker) in GitHub and archive stable releases on Zenodo with DOI.
+
+\section*{Timeline and personnel}
+- Year 0–0.25: site procurement, instrument deployment, pipeline testing.\\
+- Year 0.25–1.25: data collection.\\
+- Year 1.25–1.5: analysis, replication runs, draft manuscript.
+
+\section*{Appendix: example code outline}
+- Data I/O: use Obspy or custom readers.\\
+- Spectra: scipy.signal.welch / numpy.fft.\\
+- Centroid calc: weighted mean of PSD bins.\\
+- Confound regression: statsmodels OLS with bootstrapped residuals.
+
+\bibliographystyle{unsrt}
+\begin{thebibliography}{9}
+\bibitem{schumann} W. O. Schumann, ``On the free oscillations of a conducting sphere,'' (historical reference placeholder).
+\end{thebibliography}
+
+\end{document}
