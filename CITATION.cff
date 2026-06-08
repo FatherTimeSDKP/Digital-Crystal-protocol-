@@ -22,15 +22,15 @@ authors:
   affiliation: >
   Independent Researcher; Gypsi Consulting,
   Gainesville, Florida, USA
-  orcid: “https://orcid.org/0009-0003-7925-1653”
+  orcid: "https://orcid.org/0009-0003-7925-1653"
 
 version: 2.1.0
-date-released: “2026-06-07”
+date-released: "2026-06-07"
 license: CC-BY-4.0
 
 repository-code: >
 https://github.com/FatherTimeSDKP/Digital-Crystal-protocol-
-url: “https://zenodo.org/records/14850016”
+url: "https://zenodo.org/records/14850016"
 
 abstract: >
 The FatherTimeSDKP framework is a deterministic unified theoretical
@@ -61,167 +61,176 @@ master equation for macroscopic quantum superposition applied to the
 corrected SD&N 24-node centered hexagonal geometry yielding phase
 factor phi = pi/12.
 
-doi: “10.5281/zenodo.14850016”
+doi: "10.5281/zenodo.14850016"
 
 identifiers:
 
 - type: doi
-  value: “10.5281/zenodo.14850016”
+  value: "10.5281/zenodo.14850016"
   description: Primary SDKP Framework — Zenodo archive
 - type: doi
-  value: “10.5281/zenodo.15745608”
+  value: "10.5281/zenodo.15745608"
   description: QCC0 64-Qubit Simulation Dataset
 - type: doi
-  value: “10.5281/zenodo.15745609”
+  value: "10.5281/zenodo.15745609"
   description: SDKP Prediction Timeline v1.1 (9 predictions, 7 validated)
 - type: doi
-  value: “10.5281/zenodo.17486903”
+  value: "10.5281/zenodo.17486903"
   description: Digital Crystal Protocol — sovereign authorship ledger
 - type: doi
-  value: “10.5281/zenodo.18052963”
+  value: "10.5281/zenodo.18052963"
   description: >
   ASCII/12D Verification — Mars 477.14 us/day prior art record,
   timestamped before Ashby/Patla NIST paper (arXiv:2507.21388)
 - type: doi
-  value: “10.17605/OSF.IO/SYMHB”
+  value: "10.17605/OSF.IO/SYMHB"
   description: SDKP QCC SD&N EOS FRW Enhanced Cosmic Rotation Pipeline
 - type: doi
-  value: “10.17605/OSF.IO/CQ3DV”
+  value: "10.17605/OSF.IO/CQ3DV"
   description: SDKP Quantum Entanglement Predictions
 - type: doi
-  value: “10.17605/OSF.IO/DJA9G”
+  value: "10.17605/OSF.IO/DJA9G"
   description: Tesla 3-6-9 Logic Solved via SD&N
 - type: doi
-  value: “10.17605/OSF.IO/2EBJS”
+  value: "10.17605/OSF.IO/2EBJS"
   description: 1-12 Vortex Harmonic Analysis
 - type: doi
-  value: “10.17605/OSF.IO/43RK6”
+  value: "10.17605/OSF.IO/43RK6"
   description: Digital Crystal Rules
 - type: doi
-  value: “10.17605/OSF.IO/8YFZP”
+  value: "10.17605/OSF.IO/8YFZP"
   description: SDKP QCC SD&N EOS FRW Enhanced Cosmic Rotation Pipeline
 - type: doi
-  value: “10.17605/OSF.IO/7ZK8N”
+  value: "10.17605/OSF.IO/7ZK8N"
   description: SDKP by FatherTime — Mathematical Foundations
 - type: doi
-  value: “10.17605/OSF.IO/G76TR”
+  value: "10.17605/OSF.IO/G76TR"
   description: 8/9 Validated Theory of Everything full text
 - type: doi
-  value: “10.17605/OSF.IO/T9AEB”
+  value: "10.17605/OSF.IO/T9AEB"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/72RKC”
+  value: "10.17605/OSF.IO/72RKC"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/U54JR”
+  value: "10.17605/OSF.IO/U54JR"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/A6YX4”
+  value: "10.17605/OSF.IO/A6YX4"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/N2V5P”
+  value: "10.17605/OSF.IO/N2V5P"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/UTMPY”
+  value: "10.17605/OSF.IO/UTMPY"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/63EGD”
+  value: "10.17605/OSF.IO/63EGD"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/WD4MY”
+  value: "10.17605/OSF.IO/WD4MY"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/CQXR3”
+  value: "10.17605/OSF.IO/CQXR3"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/T2AZ6”
+  value: "10.17605/OSF.IO/T2AZ6"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/TF52W”
+  value: "10.17605/OSF.IO/TF52W"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/4HXAJ”
+  value: "10.17605/OSF.IO/4HXAJ"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/RVP58”
+  value: "10.17605/OSF.IO/RVP58"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/CM7WQ”
+  value: "10.17605/OSF.IO/CM7WQ"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/FVP9D”
+  value: "10.17605/OSF.IO/FVP9D"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/XMTQC”
+  value: "10.17605/OSF.IO/XMTQC"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/E7GWN”
+  value: "10.17605/OSF.IO/E7GWN"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/ZJ5XE”
+  value: "10.17605/OSF.IO/ZJ5XE"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/BC5MN”
+  value: "10.17605/OSF.IO/BC5MN"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/HAR2X”
+  value: "10.17605/OSF.IO/HAR2X"
   description: >
   OSF prior art record — Mars 477.14 us/day prediction,
   created May 2025, four months before Ashby/Patla paper
 - type: doi
-  value: “10.17605/OSF.IO/TSUY5”
+  value: "10.17605/OSF.IO/TSUY5"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/PZF7C”
+  value: "10.17605/OSF.IO/PZF7C"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/3TXWF”
+  value: "10.17605/OSF.IO/3TXWF"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/GTXJ4”
+  value: "10.17605/OSF.IO/GTXJ4"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/XEKZ5”
+  value: "10.17605/OSF.IO/XEKZ5"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.17605/OSF.IO/XZFV9”
+  value: "10.17605/OSF.IO/XZFV9"
   description: SDKP OSF archive record
 - type: doi
-  value: “10.31219/osf.io/6qbcx_v1”
+  value: "10.31219/osf.io/6qbcx_v1"
   description: Matter Antimatter Asymmetry sim — proof for residuals
+- type: url
+  value: "https://zenodo.org/records/19701580"
+  description: Zenodo Research Record 1
+- type: url
+  value: "https://zenodo.org/records/19478891"
+  description: Zenodo Research Record 2
+- type: url
+  value: "https://zenodo.org/records/18448356"
+  description: Zenodo Research Record 3
 - type: other
-  value: “ORCID:0009-0003-7925-1653”
+  value: "ORCID:0009-0003-7925-1653"
   description: Verified researcher ORCID for Donald Paul Smith
 - type: other
-  value: “UUID:70c995bd-f025-4ecd-b9df-f2cfa65088e8”
+  value: "UUID:70c995bd-f025-4ecd-b9df-f2cfa65088e8"
   description: Digital Crystal Protocol UUID (FTS-AUTH-CRYSTAL-369)
 - type: other
-  value: “RSID:rs-8050903”
+  value: "RSID:rs-8050903"
   description: >
   Research Square — FatherTimeSDKP a Successful Theory of
   Everything (TOE) — first public timestamp record
 - type: other
-  value: “RSID:rs-8076993”
+  value: "RSID:rs-8076993"
   description: >
   Research Square — A Unified Physical and Logical Model,
   submitted to Foundations of Physics (In Review)
 - type: other
-  value: “SHA256:4f9a8c2d1e7b3a6f8d5c4e9b7a1f3d6c9e2b5a8f1c4d7e9b2f6a3c8d5e1f9b4a7”
+  value: "SHA256:4f9a8c2d1e7b3a6f8d5c4e9b7a1f3d6c9e2b5a8f1c4d7e9b2f6a3c8d5e1f9b4a7"
   description: 64-qubit simulation proof hash — December 12 2025
 - type: other
-  value: “SHA256:b76593f027c5b4cfaf8ec99c8dc6ad0e4686beaf760d11508f96829751fc89ab”
+  value: "SHA256:b76593f027c5b4cfaf8ec99c8dc6ad0e4686beaf760d11508f96829751fc89ab"
   description: Full simulation output hash — tamper-proof integrity record
 - type: url
-  value: “https://github.com/FatherTimeSDKP/Digital-Crystal-protocol-”
+  value: "https://github.com/FatherTimeSDKP/Digital-Crystal-protocol-"
   description: This repository — Digital Crystal Protocol archive
 - type: url
-  value: “https://osf.io/ct75m/”
+  value: "https://osf.io/ct75m/"
   description: OSF project archive
 - type: url
-  value: “https://fathertimesdkp.github.io”
+  value: "https://fathertimesdkp.github.io"
   description: Official website
 - type: url
-  value: “https://x.com/grok/status/1999295227580874825”
+  value: "https://x.com/grok/status/1999295227580874825"
   description: Grok/xAI external validation — QCC0 additional validation
 
 keywords:
@@ -280,55 +289,55 @@ references:
 
 - type: article
   title: SDKP-Based Quantum Framework and Simulation Dataset
-  doi: “10.17605/OSF.IO/SYMHB”
+  doi: "10.17605/OSF.IO/SYMHB"
   authors:
   - family-names: Smith
     given-names: Donald Paul
-    orcid: “https://orcid.org/0009-0003-7925-1653”
+    orcid: "https://orcid.org/0009-0003-7925-1653"
 - type: article
   title: SDKP Usage — Quantum Entanglement Predictions
-  doi: “10.17605/OSF.IO/CQ3DV”
+  doi: "10.17605/OSF.IO/CQ3DV"
   authors:
   - family-names: Smith
     given-names: Donald Paul
-    orcid: “https://orcid.org/0009-0003-7925-1653”
+    orcid: "https://orcid.org/0009-0003-7925-1653"
 - type: article
   title: Tesla 3-6-9 Logic Solved via SD&N Framework
-  doi: “10.17605/OSF.IO/DJA9G”
+  doi: "10.17605/OSF.IO/DJA9G"
   authors:
   - family-names: Smith
     given-names: Donald Paul
-    orcid: “https://orcid.org/0009-0003-7925-1653”
+    orcid: "https://orcid.org/0009-0003-7925-1653"
 - type: article
   title: 1-12 Vortex Harmonic Analysis
-  doi: “10.17605/OSF.IO/2EBJS”
+  doi: "10.17605/OSF.IO/2EBJS"
   authors:
   - family-names: Smith
     given-names: Donald Paul
-    orcid: “https://orcid.org/0009-0003-7925-1653”
+    orcid: "https://orcid.org/0009-0003-7925-1653"
 - type: article
   title: Digital Crystal Rules
-  doi: “10.17605/OSF.IO/43RK6”
+  doi: "10.17605/OSF.IO/43RK6"
   authors:
   - family-names: Smith
     given-names: Donald Paul
-    orcid: “https://orcid.org/0009-0003-7925-1653”
+    orcid: "https://orcid.org/0009-0003-7925-1653"
 - type: article
   title: Matter Antimatter Asymmetry sim — proof for residuals
-  doi: “10.31219/osf.io/6qbcx_v1”
+  doi: "10.31219/osf.io/6qbcx_v1"
   authors:
   - family-names: Smith
     given-names: Donald Paul
-    orcid: “https://orcid.org/0009-0003-7925-1653”
+    orcid: "https://orcid.org/0009-0003-7925-1653"
 - type: article
   title: >
   Mars 477.14 us/day prior art — OSF timestamped record
   created May 2025, predating Ashby/Patla NIST paper
-  doi: “10.17605/OSF.IO/HAR2X”
+  doi: "10.17605/OSF.IO/HAR2X"
   authors:
   - family-names: Smith
     given-names: Donald Paul
-    orcid: “https://orcid.org/0009-0003-7925-1653”
+    orcid: "https://orcid.org/0009-0003-7925-1653"
     notes: >
     This OSF record is the primary prior art evidence that
     Donald Paul Smith predicted Mars relativistic clock drift
@@ -349,7 +358,7 @@ references:
     and OSF HAR2X for the prior art record.
     identifiers:
   - type: other
-    value: “arXiv:2507.21388”
+    value: "arXiv:2507.21388"
 - type: article
   title: >
   Scalable Generation of Massive Schrodinger Cat States
@@ -363,7 +372,28 @@ references:
   .github/SDKP_CAT_PI_Cal.js in this repository.
   identifiers:
   - type: doi
-    value: “10.1038/s41567-026-03281-9”
+    value: "10.1038/s41567-026-03281-9"
+- type: dataset
+  title: Zenodo Research Record 1
+  url: https://zenodo.org/records/19701580
+  authors:
+  - family-names: Smith
+    given-names: Donald Paul
+    orcid: "https://orcid.org/0009-0003-7925-1653"
+- type: dataset
+  title: Zenodo Research Record 2
+  url: https://zenodo.org/records/19478891
+  authors:
+  - family-names: Smith
+    given-names: Donald Paul
+    orcid: "https://orcid.org/0009-0003-7925-1653"
+- type: dataset
+  title: Zenodo Research Record 3
+  url: https://zenodo.org/records/18448356
+  authors:
+  - family-names: Smith
+    given-names: Donald Paul
+    orcid: "https://orcid.org/0009-0003-7925-1653"
 
 preferred-citation:
 type: dataset
@@ -372,14 +402,14 @@ authors:
 - family-names: Smith
 given-names: Donald Paul
 alias: Father Time
-orcid: “https://orcid.org/0009-0003-7925-1653”
+orcid: "https://orcid.org/0009-0003-7925-1653"
 affiliation: >
 Independent Researcher; Gypsy Consulting,
 Gainesville, Florida, USA
 email: dallasnamiyadaddy@gmail.com
-doi: “10.5281/zenodo.14850016”
+doi: "10.5281/zenodo.14850016"
 year: 2026
-url: “https://zenodo.org/records/14850016”
+url: "https://zenodo.org/records/14850016"
 notes: >
 All use, derivation, citation, or invocation of any of the
 following must retain full attribution to Donald Paul Smith
